@@ -175,3 +175,7 @@ After editing code: `sudo systemctl restart tradebot newswatch`
 
 Educational and personal use. Not financial advice. Options can expire worthless; only use
 money you can afford to lose, and paper-trade first.
+
+## Enjoying it?
+
+It's free. If it saved you time, an optional tip is welcome: https://venmo.com/u/chipps2069 (voluntary, for the software only, not for advice) <!-- tip -->

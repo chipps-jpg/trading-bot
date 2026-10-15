@@ -30,6 +30,8 @@ buy / put signals using a local Ollama model.
 
 Full step-by-step setup: see SETUP.md
 
+Free to use. If it helps you, an optional tip is appreciated: https://venmo.com/u/chipps2069 <!-- tip -->
+
 Built for long calls and puts only, in a cash account. Not financial advice. It can lose
 you money. Use it at your own risk, and paper-trade first.
 
