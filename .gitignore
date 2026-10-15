@@ -1,0 +1,21 @@
+# secrets and personal data - never commit these
+alpaca.env
+*.env
+account.json
+positions.json
+trade_log.csv
+rules_log.csv
+buy_signals.json
+news_outcomes.csv
+congress_log.csv
+unsettled.json
+daily_state.json
+live_ref.json
+watchlist.json
+watchlist.lock
+earnings_cache.json
+*.bak
+*.bak0
+*.csv
+__pycache__/
+venv/
