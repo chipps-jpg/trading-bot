@@ -1,5 +1,28 @@
 # Options trade assistant (advisory only)
 
+## READ THIS FIRST - use at your own risk
+
+This is a personal hobby project, shared as-is. It is **not financial advice**, it is not a
+recommendation to buy or sell anything, and nobody has audited it. It can have bugs. Options
+can lose 100% of what you put in. Only use money you can afford to lose, and paper-trade
+(log pretend trades) for a while before using real money. The author is not responsible for
+any losses or damages from using this software.
+
+**The settings are the author's, not yours.** The rules, tickers, trading window, stops and
+sizing in this code reflect one person's account and habits. Before you rely on it, go through
+and change them to fit YOU:
+
+- **Tickers:** `WATCHLIST` in tradebot.py and `my_tickers` in newswatch.py
+- **Rules and trading window:** `RULES`, `TRADE_DAYS` and `DAY_START` in tradebot.py
+  (the default is: Mon and Tue start at 11 AM Central, Wed-Fri all day, flat by Friday, long calls and puts only)
+- **Stops and targets:** `STOP`, `TARGETS` and `SOFT` in tradebot.py (-20%, +20%/+40%, +/-10%)
+- **Position size:** set with `balance` and the cash/slots settings (default 50% cash, 2 positions)
+- **Fees:** `FEE_PER_CONTRACT` in tradebot.py ($0.65 each way is a Fidelity-style number)
+- **Time zone:** `America/Chicago` in tradebot.py, newswatch.py and market_extras.py
+- **Account type:** it assumes a cash account (T+1 settlement). Margin accounts work differently.
+
+The bot only advises. It never places orders. You are responsible for every trade you make.
+
 A self-hosted bot you drive from your phone. It does NOT place trades. You buy and sell
 yourself (Fidelity, Webull, whatever) and tell the bot what you did. It then watches your
 positions, warns you at -10% / -20%, flags +20% / +40% targets, and scans news for
